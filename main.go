@@ -22,6 +22,7 @@ func main() {
 			} 
 		} else {
 			c.addStack(f)
+			return f
 		}
 		return r
 	}
