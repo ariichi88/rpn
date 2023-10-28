@@ -9,7 +9,11 @@ import (
 
 func main() {
 
-	var c calc
+	var (
+		c calc
+		f float64
+		i string
+	)
 
 	exec := func(input string) float64 {
 		var r float64
@@ -28,8 +32,6 @@ func main() {
 	}
 
 	if len(os.Args) == 1 {
-		var i string
-		var f float64
 		fmt.Println("exit with q")
 		for {
 			fmt.Scan(&i)
@@ -41,7 +43,6 @@ func main() {
 			fmt.Println(f)
 		}
 	} else {
-		var f float64
 		for _, arg := range(os.Args) {
 			f = exec(arg)
 		}
