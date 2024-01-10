@@ -1,11 +1,24 @@
 # rpn
 
-This is a command that performs four simple arithmetic operations using reverse Polish notation.  
+逆ポーランド記法で四則演算する、簡単なコマンドライン計算機  
 
-usage:  
-Calculate by entering the calculation formula in the command line argument  
-no commandline arguments →  Calculate interactively  
+## 使い方  
+コマンドライン引数に計算式を指定してください。  
+また、引数なしで起動すると対話的に計算を行うことができます。  
+例  
+```
+rpn 200 300 + 100 * 10 /
 
-no application option:  
-no help option:  
+or
+
+rpn
+exit with q
+200
+300
++
+q -> ｑでコマンドを終了します
+```
+
+## 補足
+コマンドラインオプションとヘルプオプションはありません  
 
