@@ -8,7 +8,7 @@ GitHubからクローン
 git clone git@github.com:ariichi88/rpn.git
 ```
 ビルド 
-'''
+```
 go build 
 ```
 できた実行ファイルをパスの通ったディレクトリにコピーしてください  
